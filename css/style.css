@@ -405,6 +405,7 @@ main section#view-msgs div.preview-all-msg div.row{
     align-items: center;
     justify-content: space-around;
     background-color: #eee;
+    border-bottom: 1px solid #DDD;
 }
 
 #share-section .img-share img{
@@ -437,3 +438,55 @@ main section#view-msgs div.preview-all-msg div.row{
     color: #333;
 }
 
+#alter-menu{
+    display: flex;
+    justify-content: space-around;
+    padding: 1em;
+    border-bottom: 1px solid #DDD;
+}
+
+#alter-menu ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    padding: 1em 0;
+    font-size: .8em;
+    color: #007191;
+}
+
+.strong{
+    font-weight: 700;
+}
+
+#alter-menu ul li{
+    padding: 5px 0;
+}
+
+#alter-menu #language-box{
+    display: flex;
+    align-items: center;
+    color: #555;
+}
+
+#alter-menu #language-box i{
+    padding: 10px;
+    height: 40px;
+    border-right: none;
+    border-top: 1px solid #333;
+    border-bottom: 1px solid #333;
+    border-left: 1px solid #333;
+
+}
+
+#alter-menu #language-box #language{
+    height: 40px;
+    width: 80%;
+    border-left: none;
+    border-top: 1px solid #333;
+    border-bottom: 1px solid #333;
+    border-right: 1px solid #333;
+}
+
+#language:focus{
+    outline: 0;
+}
