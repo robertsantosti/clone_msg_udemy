@@ -5,7 +5,7 @@
     font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
-html, body{
+html, body, #app{
     height: 100%;
 }
 
@@ -142,13 +142,16 @@ main section#unread-msg p{
 main section#view-msgs{
     display: flex;
     flex: 1 1 300px;
-    height: 405px;
+    max-height: 500px;
+    height: 100vw;
+    border-bottom: 1px solid #DDD;
 }
 
 main section#view-msgs div.preview-all-msg{
+    height: 100%;
     display: flex;
     flex-direction: column;
-    height: 100%;
+    min-width: 400px;
     flex-basis: 400px;
     border-right: 1px solid #DDD;
     background-color: #eee;
@@ -274,4 +277,122 @@ main section#view-msgs div.preview-all-msg div.row{
 
 .all-msg .single-msg .preview-msg .fas:hover{
     color: #333;
+}
+
+/*Mensagem*/
+
+.view-current-msg{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    height: 100%;
+}
+
+.view-current-msg .header-current-msg{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: .5em 1em;
+    border-bottom: 1px solid #DDD;
+    color: #ddd;
+    cursor: pointer;
+}
+
+.view-current-msg .header-current-msg .sender-info{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-grow: 2;
+    padding-left: 1em;
+}
+
+.view-current-msg .header-current-msg .sender-info img{
+    padding: 2px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 1px solid #DDD;
+    margin-right: 10px;
+}
+
+.view-current-msg .header-current-msg .sender-info h3{
+    font-weight: 700;
+    color: #007191;
+    font-size: 1em;
+}
+
+.main-current-msg{
+    padding: 1em;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    border-bottom: 1px solid #DDD;
+    box-sizing: border-box;
+}
+
+.main-current-msg .recieved-msg{
+    width: 60%;
+    border: 0;
+    background-color: #eee;
+    padding: 1em;
+    font-size: 1em;
+    line-height: 24px;
+    box-shadow: #DDD 3px 3px 5px;
+}
+
+.main-current-msg .recieved-msg .header-msg{
+    font-size: .75em;
+    font-weight: 300;
+    padding: 1em 0;
+}
+
+.main-current-msg .recieved-msg .main-msg{
+    text-align: justify;
+    padding-right: 30px;
+    color: #555;
+}
+
+
+.view-current-msg .write-new-msg{
+    display: flex;
+    margin: 1em;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.view-current-msg .write-new-msg .write-helpers{
+    border: 1px solid #DDD;
+    margin: 0;
+    padding: 0;
+    color: #555;
+    display: flex;
+    align-items: center;
+}
+
+.view-current-msg .write-new-msg .write-helpers i{
+    margin: 0;
+    padding: 15px;
+}
+
+.view-current-msg .write-new-msg .write-helpers i:hover{
+    background-color: #007191;
+    color: #FFF;
+}
+
+.view-current-msg .write-new-msg .text-area textarea{
+    width: 100%;
+    padding: 1em;
+    border: 1px solid #DDD;
+}
+
+.view-current-msg .write-new-msg button#send-msg{
+    width: 100px;
+    padding: 10px;
+    border: 0;
+    border-radius: 5px;
+    color: #FFF;
+    font-weight: 700;
+    background-color: #FF4500;
+    cursor: pointer;
+    margin: 1em 0;
 }
