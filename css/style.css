@@ -5,6 +5,11 @@
     font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
+.container{
+    padding-left: 8%;
+    padding-right: 8%;
+}
+/*Barra de Navegação*/
 header nav.navbar{
     font-size: 14px;
     color: #555;
@@ -65,9 +70,66 @@ li#user-menu{
     flex-grow: 2;
 }
 
-
 header nav.navbar ul.nav li.nav-item ul.sub-nav{
     display: flex;
     justify-content: space-around;
     align-items: center;
+}
+
+header nav.navbar ul.nav li.nav-item ul.sub-nav .fas.fa-shopping-cart, header nav.navbar ul.nav li.nav-item ul.sub-nav .far{
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header nav.navbar ul.nav li.nav-item ul.sub-nav .fas.fa-shopping-cart:hover, header nav.navbar ul.nav li.nav-item ul.sub-nav .far:hover{
+    background-color: #EEE;
+    border: 1px solid #DDD;
+    border-radius: 50%;
+}
+
+i.far.fa-heart{
+    color: #F00;
+}
+
+header nav.navbar ul.nav li.nav-item ul.sub-nav .user{
+    width: 60px;
+    height: 60px;
+    background-color: #000;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header nav.navbar ul.nav li.nav-item ul.sub-nav .user img{
+    width: 50px;
+    height: 50px;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    border-radius: 50%;
+    background-size: cover;
+}
+
+/*Mensagens não lidas*/
+main section#unread-msg{
+    color: #FFF;
+    background-color: #585858;
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+
+main section#unread-msg h2{
+    font-weight: 400;
+    font-size: 2em;
+    padding: 12px 0;
+}
+
+main section#unread-msg p{
+    font-weight: 300;
 }
