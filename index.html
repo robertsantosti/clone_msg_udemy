@@ -63,6 +63,49 @@
                     <p>Você tem 0 mensagens não lidas.</p>
                 </div>
             </section>
+
+            <section id="view-msgs">
+               <div class="preview-all-msg" id="preview-all-msg">
+                    <div class="create-msg">
+                        <div class="row">
+                            <button id="btn-create-msg">Compor</button>
+                            <select name="type-msg" id="type-msg">
+                                <option value="all">Todas as Mensagens</option>
+                                <option value="unread">Não lida</option>
+                                <option value="not-response">Sem resposta</option>
+                                <option value="important">Importante</option>
+                            </select>
+                        </div>
+                        <div class="row">
+                            <input type="search" name="search-msg" id="search-msg" placeholder="Pesquisar"/>
+                            <button class="btn-search-msg"><i class="fas fa-search"></i></button>
+                        </div>
+                    </div>
+                    <div class="all-msg">
+                        <div class="single-msg">
+                            <div class="row">
+                                <div class="header-user">
+                                    <img src="img/menina.png" alt="Mariana Fonseca" class="user-avatar" width="50" height="50"/>
+                                    <h3>Mariana Fonseca</h3>
+                                </div>
+                                <div class="date-msg" id="date-msg">
+                                    <p>há 1 dia</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="preview-msg">
+                                    <i class="fas fa-star"></i>
+                                    <p>Parabéns por concluir o curso de HTML5, CSS3 ...</p>
+                                    <i class="fas fa-ban"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+               </div>
+               <div class="view-current-msg" id="view-current-msg">
+                   p
+               </div>
+            </section>
         </main>
     </div>
 </body>

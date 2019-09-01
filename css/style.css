@@ -5,6 +5,10 @@
     font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
+html, body{
+    height: 100%;
+}
+
 .container{
     padding-left: 8%;
     padding-right: 8%;
@@ -132,4 +136,75 @@ main section#unread-msg h2{
 
 main section#unread-msg p{
     font-weight: 300;
+}
+
+/*Corpo principal*/
+main section#view-msgs{
+    display: flex;
+    flex: 1 1 300px;
+}
+
+main section#view-msgs div.preview-all-msg{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    flex-basis: 400px;
+    border-right: 1px solid #DDD;
+    background-color: #eee;
+}
+
+main section#view-msgs div.preview-all-msg div.row{
+    display: flex;
+    flex-direction: row;
+}
+
+.create-msg{
+    padding: 1em 1em;
+    display: flex;
+    flex-direction: column;
+    font-size: 1em;
+    border-bottom: 1px solid #DDD;
+}
+
+.create-msg .row{
+    padding-bottom: 10px;
+}
+
+.create-msg button#btn-create-msg{
+    height: 40px;
+    padding: 0 20px;
+    color: #007791;
+    border: 1px solid #007791;
+    background-color: #FFF;
+    margin-right: 10px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.create-msg button#btn-create-msg:hover{
+    color: #333;
+    border: 1px solid #333;
+}
+
+.create-msg select#type-msg{
+    width: 100%;
+    padding-left: 10px;
+}
+
+.create-msg input#search-msg{
+    height: 40px;
+    width: 90%;
+    border: 0;
+    background-color: #FFF;
+    padding-left: 20px;
+    font-size: 1em;
+}
+
+.create-msg button.btn-search-msg{
+    height: 40px;
+    padding: 0 15px;
+    border: 0;
+    cursor: pointer;
+    color: #FFF;
+    background-color: #007191;
 }
