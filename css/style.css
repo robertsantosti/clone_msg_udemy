@@ -142,6 +142,7 @@ main section#unread-msg p{
 main section#view-msgs{
     display: flex;
     flex: 1 1 300px;
+    height: 405px;
 }
 
 main section#view-msgs div.preview-all-msg{
@@ -189,6 +190,7 @@ main section#view-msgs div.preview-all-msg div.row{
 .create-msg select#type-msg{
     width: 100%;
     padding-left: 10px;
+    cursor: pointer;
 }
 
 .create-msg input#search-msg{
@@ -207,4 +209,69 @@ main section#view-msgs div.preview-all-msg div.row{
     cursor: pointer;
     color: #FFF;
     background-color: #007191;
+    border-radius: 0 5px 5px 0;
+}
+
+.all-msg{
+    padding: 1em 1em;
+    display: flex;
+}
+
+.all-msg .row{
+    display: flex;
+    flex-direction: row;
+}
+
+.all-msg .single-msg{
+    border: 1px solid #DDD;
+    background-color: #fff;
+    padding: 1em 1em;
+    border-radius: 5px;
+}
+
+.all-msg .single-msg .header-user{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 70%;
+}
+
+.all-msg .header-user img.user-avatar{
+    padding: 2px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid #DDD;
+    margin-right: 10px;
+}
+
+.all-msg .single-msg .header-user h3{
+    font-size: 1em;
+    font-weight: 700;
+    color: #444;
+}
+
+.all-msg .single-msg .date-msg{
+    font-size: .75em;
+    width: 30%;
+    text-align: right;
+    color: #555;
+}
+
+.all-msg .single-msg .preview-msg{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    padding: 1em 0;
+    color: #888;
+    cursor: pointer;
+}
+
+.all-msg .single-msg .preview-msg p{
+    padding: 0 10px;
+    font-size: .75em;
+}
+
+.all-msg .single-msg .preview-msg .fas:hover{
+    color: #333;
 }
