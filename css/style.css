@@ -490,3 +490,31 @@ main section#view-msgs div.preview-all-msg div.row{
 #language:focus{
     outline: 0;
 }
+
+/*Patrocinadores**/
+
+#sponsors{
+    padding: 1em;
+    border-bottom: 1px solid #DDD;
+}
+#sponsors .text-call{
+    color: #555;
+    display: flex;
+    justify-content: center;
+    padding: 1em;
+}
+
+#sponsors .text-call span{
+    color: #007191;
+}
+
+#sponsors .sponsors-logo{
+    display: flex;
+    justify-content: center;
+}
+
+#sponsors .sponsors-logo i{
+    padding: 0 1em;
+    font-size: 3em;
+    color: #aaa;
+}
