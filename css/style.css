@@ -518,3 +518,35 @@ main section#view-msgs div.preview-all-msg div.row{
     font-size: 3em;
     color: #aaa;
 }
+
+/*Rodape*/
+footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 5px solid #FF4500;
+    padding: 1.5em;
+}
+
+footer .logo img{
+    width: 50%;
+}
+
+footer .copy{
+    font-size: .8em;
+    color: #AAA;
+}
+
+footer .terms ul{
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    font-size: .8em;
+    color: #007191;
+    cursor: pointer;
+}
+
+footer .terms ul li{
+    text-align: center;
+    padding: 0 1em;
+}
